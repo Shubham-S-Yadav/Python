@@ -38,7 +38,7 @@ if len > 12:
 
 for char in password:
   if char.isalpha():
-    if char > 'a' and char < 'z':
+    if char.islower():
       small = small + 1
     else:
       capital = capital + 1
