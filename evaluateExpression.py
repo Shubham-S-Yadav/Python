@@ -15,4 +15,13 @@ num1, plus, num2, equal = expression.split()
 
 num1, num2 = int(num1), int(num2)
 
-print(expression+str(num1+num2))
+if plus == '+':
+  print(expression+str(num1+num2))
+elif plus == '-':
+  print(expression+str(num1-num2))
+elif plus == '/':
+  print(expression+str(num1/num2))
+elif plus == '**':
+  print(expression+str(num1**num2))
+else:
+  print(expression+str(num1*num2))
